@@ -61,6 +61,7 @@ p{
     max-width: 1207px;
     display: flex;
     margin-left: 150px;
+    margin-bottom: 150px;
 }
 .navbar{
     margin-top: 45px;
@@ -132,7 +133,7 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 91px 73px 134px 68px;
+    padding-left: 71px;
     border-radius: 10px;
     box-shadow: 0px 23px 15px 0px rgba(0,0,0,0.06);
 }
@@ -143,6 +144,7 @@ p{
 }
 .item{
     display: flex;
+
 }
 .p-secondary{
     color: var(--mainParagraph);
@@ -158,7 +160,6 @@ p{
 }
 .text-box{
     text-align: center;
-
 }
 
 .flex{
@@ -232,11 +233,28 @@ p{
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid var(--secondaryBorders);
-    padding: 30px 100px 30px 30px;
+    padding: 30px auto ;
+}
+.testimonial p{
+    margin: 30px 100px 30px 30px;
+    position: relative;
+}
+
+.flex-star{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 31px;
+    top: 45px;
+
 }
 .person{
+    position: relative;
+    top: 36px;
+    left: 100px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .person h5{
