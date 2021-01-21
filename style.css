@@ -1,14 +1,44 @@
 html{
-    
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --primaryColor:#0B132A; /*Text color*/
+    --mainParagraph: #4F5665;/*Paragraph color*/
+    --mainButtons: #F53838;/*Buttons*/
+    --mainWhite: #ffffff;/*just white :X*/
+}
+h1{
+    font-size: 3.125rem;
+    font-weight: normal;
+    line-height: 70px;
+}
+h2{
+    font-size: 2.1875rem;
+    font-weight: normal;
 }
 *{
-
+    box-sizing: border-box;
 }
+.container{
+    max-width: 1140px;
+    display: flex;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
-.container-fluid{
-    background-color: aliceblue;
+.nav-items{
+    display: flex;
+}
+.navbar ul li{
+    padding: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar ul li a{
+    color: var(--primaryColor);
+    text-decoration: none;
 }
