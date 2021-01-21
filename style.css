@@ -23,8 +23,8 @@ h2{
 .container{
     max-width: 1140px;
     display: flex;
+    margin-left: 150px;
 }
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -34,12 +34,12 @@ h2{
     display: flex;
 }
 .navbar ul li{
-    padding: 40px;
+    padding-right: 40px;
     list-style: none;
     text-decoration: none;
 }
 .navbar ul li a{
-    color: var(--primaryColor);
+    color: var(--mainParagraph);
     text-decoration: none;
 }
 .btn-primary{
