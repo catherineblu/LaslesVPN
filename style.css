@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html{
     font-size: 16px;
@@ -10,6 +12,7 @@ html{
     --mainParagraph: #4F5665;/*Paragraph color*/
     --mainButtons: #F53838;/*Buttons*/
     --secondaryIcons: #FFECEC;/*background of the icons*/
+    --secondaryBorders: #DDDDDD;
     --mainWhite: #ffffff;/*just white :X*/
 }
 h1{
@@ -25,6 +28,12 @@ h3{
     font-size: 1.5625rem;
     margin: 0;
     padding: 0;
+}
+h5{
+    font-size: 1.125rem;
+}
+h6{
+    font-size: 0.875rem;
 }
 p{
     font-size: 1rem;
@@ -45,6 +54,7 @@ p{
     margin-left: 150px;
 }
 .navbar{
+    margin-top: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +79,7 @@ p{
     font-weight: 500;
     width: 150px;
     height: 45px;
-    border: 1px solid #F53855;
+    border: 1px solid var(--mainButtons);
     outline: none;
     border-radius: 50px;
 }
@@ -133,7 +143,7 @@ p{
 }
 .text-box{
     text-align: center;
-    padding-bottom: 60px;
+    /*padding-bottom: 60px;*/
 }
 .flex{
     align-items: flex-start;
@@ -156,6 +166,44 @@ p{
     flex-direction: column;
 }
 .plan-box{
-    border: 2px solid #DDDDDD;
+    border: 2px solid var(--secondaryBorders);
     border-radius: 10px;
+}
+.container-text-box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 155px;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.testimonial{
+    display: flex;
+    width: 400px;
+    margin-left: 50px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid var(--secondaryBorders);
+    padding: 30px 100px 30px 30px;
+}
+.person{
+    display: flex;
+    flex-wrap: wrap;
+}
+.person h5{
+    color: var(--primaryColor);
+}
+.person h6{
+    color: var(--mainParagraph);
+    font-weight: 400;
+}
+.row ul li{
+    list-style: none;
+}
+.row ul li a{
+    text-decoration: none;
+    color: var(--mainParagraph);
 }
