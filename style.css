@@ -1,0 +1,11 @@
+*{
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-fluid{
+    background-color: aliceblue;
+}
