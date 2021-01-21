@@ -6,6 +6,7 @@ html{
     --primaryColor:#0B132A; /*Text color*/
     --mainParagraph: #4F5665;/*Paragraph color*/
     --mainButtons: #F53838;/*Buttons*/
+    --secondaryIcons: #FFECEC;/*background of the icons*/
     --mainWhite: #ffffff;/*just white :X*/
 }
 h1{
@@ -16,6 +17,11 @@ h1{
 h2{
     font-size: 2.1875rem;
     font-weight: normal;
+}
+p{
+    font-size: 1rem;
+    color: var(--mainParagraph);
+    line-height: 30px;
 }
 *{
     box-sizing: border-box;
@@ -34,6 +40,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 101px;
 }
 .nav-items{
     display: flex;
@@ -75,4 +82,22 @@ h2{
     border: none;
     font-weight: 700;
     font-size: 1rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.icons img{
+    background-color: var(--secondaryIcons);
+    border-radius: 70px;
+    width: 55px;
+    height: 55px;
+}
+.item{
+    display: flex;
+}
+.p-secondary{
+    color: var(--mainParagraph);
+    font-size: 1.25rem;
 }
