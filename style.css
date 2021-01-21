@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html{
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
@@ -30,9 +33,7 @@ p{
     padding: 0;
     /*line-height: 30px;*/
 }
-*{
-    box-sizing: border-box;
-}
+
 .container{
     max-width: 1140px;
     display: flex;
@@ -72,6 +73,10 @@ p{
     outline: none;
     border-radius: 50px;
 }
+.btn-primary:hover{
+    background-color: var(--mainButtons);
+    color: var(--mainWhite);
+}
 .link-primary{
     text-decoration: none;
     font-weight: 500;
@@ -81,6 +86,10 @@ p{
 }
 .hero-section{
     padding-bottom: 105px;
+}
+.hero-section p{
+    line-height: 30px;
+    padding-bottom: 50px;
 }
 .btn-secondary{
     background-color: var(--mainButtons);
@@ -92,6 +101,7 @@ p{
     border: none;
     font-weight: 700;
     font-size: 1rem;
+    box-shadow: 0px 20px 10px 0px rgba(245, 56, 56, 0.35);
 }
 .vl{
     height: 126px;
@@ -110,13 +120,32 @@ p{
 .item{
     display: flex;
 }
-.item img{
-
-}
 .p-secondary{
     color: var(--mainParagraph);
     font-size: 1.25rem;
 }
 .small-box{
     margin-left: 36.5px;
+}
+.plans{
+    display: flex;
+    justify-content: space-between;
+}
+.pros{
+    padding-left: 170px;
+}
+.pros h2{
+    font-weight: 500;
+    line-height: 50px;
+}
+.pros p{
+    text-align: center;
+    line-height: 30px;
+}
+.container-box{
+    flex-direction: column;
+}
+.plan-box{
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
 }
