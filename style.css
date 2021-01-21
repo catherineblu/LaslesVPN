@@ -42,3 +42,14 @@ h2{
     color: var(--primaryColor);
     text-decoration: none;
 }
+.btn-primary{
+    color: var(--mainButtons);
+    background-color: var(--mainWhite);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 150px;
+    height: 45px;
+    border: 1px solid #F53855;
+    outline: none;
+    border-radius: 50px;
+}
