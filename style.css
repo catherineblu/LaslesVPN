@@ -15,6 +15,14 @@ html{
     --secondaryBorders: #DDDDDD;
     --mainWhite: #ffffff;/*just white :X*/
 }
+main{
+    background-color: #fbfbfb;
+}
+footer{
+    background-color: #F8F8F8;
+    padding-top: 180px; 
+    padding-bottom: 100px;
+}
 h1{
     font-size: 3.125rem;
     font-weight: normal;
@@ -140,6 +148,7 @@ p{
 .plans{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .text-box{
     text-align: center;
@@ -150,6 +159,7 @@ p{
     display: flex;
 }
 .pros{
+    margin-top: 95px;
     padding-left: 170px;
 }
 .pros h2{
@@ -157,17 +167,39 @@ p{
     line-height: 50px;
 }
 .pros p{
-    text-align: center;
+    margin-left: 12px;
+    padding-bottom: 20px;
+    text-align: left;
     line-height: 30px;
     font-size: 0.875rem;
     font-weight: 400;
 }
 .container-box{
     flex-direction: column;
+    margin-top: 50px;
+}
+.text-box h2{
+    padding-bottom: 20px;
 }
 .plan-box{
+    height: 760px;
+    margin-top: 60px;
+    background-color: var(--mainWhite);
     border: 2px solid var(--secondaryBorders);
     border-radius: 10px;
+    padding: 75px 80px 75px 50px;
+} 
+.plan-box:hover{
+    border: 2px solid var(--mainButtons);
+}
+
+.plan-box h2{
+    font-size: 18px;
+}
+.plan-box p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
 }
 .container-text-box{
     display: flex;
@@ -178,7 +210,13 @@ p{
 .testimonials{
     display: flex;
     justify-content: space-between;
-    
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -250px;
 }
 .testimonial{
     display: flex;
@@ -210,7 +248,57 @@ p{
 }
 
 .container-form{
+    position: relative;
+    display: flex;
+    padding: 70px 59px 70px 59px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: 100px;
+    background-color: var(--mainWhite);
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.text h2{
+    line-height: 45px;
+}
+.text p{
+    margin-top: 20px;
+}
+.social{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: 220px;
+    max-width: 340px;
+}
+.social p{
+    line-height: 30px;
+}
+.trademark {
+    color: #AFB5C0;
+    font-size: lighter;
+}
+
+.row{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+
 }
+.footer-head{
+    margin-bottom: 20px;
+}
+.row ul li{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.footer-header{
+    padding-bottom: 10px;
+}
+
