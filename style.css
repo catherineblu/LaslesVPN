@@ -193,6 +193,7 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
+
 .person h5{
     color: var(--primaryColor);
 }
@@ -206,4 +207,10 @@ p{
 .row ul li a{
     text-decoration: none;
     color: var(--mainParagraph);
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
