@@ -131,6 +131,14 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.text-box{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.flex{
+    align-items: flex-start;
+    display: flex;
+}
 .pros{
     padding-left: 170px;
 }
@@ -141,6 +149,8 @@ p{
 .pros p{
     text-align: center;
     line-height: 30px;
+    font-size: 0.875rem;
+    font-weight: 400;
 }
 .container-box{
     flex-direction: column;
