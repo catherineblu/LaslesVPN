@@ -53,3 +53,10 @@ h2{
     outline: none;
     border-radius: 50px;
 }
+.link-primary{
+    text-decoration: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primaryColor);
+    margin-right: 30px;
+}
