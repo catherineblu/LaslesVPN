@@ -86,6 +86,11 @@ p{
     font-weight: 700;
     font-size: 1rem;
 }
+.vl{
+    height: 126px;
+    border-left: 2px solid #EEEFF2;
+    padding-left: 101px;
+}
 .icons{
     display: flex;
     justify-content: space-between;
