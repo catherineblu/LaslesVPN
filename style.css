@@ -83,6 +83,13 @@ p{
     color: var(--mainParagraph);
     text-decoration: none;
 }
+.hamburger{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:var(--mainButtons);
+    font-size: 20px;
+}
 .btn-primary{
     color: var(--mainButtons);
     background-color: var(--mainWhite);
