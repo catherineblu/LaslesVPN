@@ -124,22 +124,23 @@ p{
     box-shadow: 0px 20px 10px 0px rgba(245, 56, 56, 0.35);
 }
 .vl{
-    height: 126px;
     border-left: 2px solid #EEEFF2;
-    padding-left: 101px;
+    margin-left: 90px;
+    height: 100px;
+    
 }
 .icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-left: 71px;
+    padding: 90px 37px 90px 17px;
     border-radius: 10px;
     box-shadow: 0px 23px 15px 0px rgba(0,0,0,0.06);
 }
 .image{
     background-color: var(--secondaryIcons);
-    padding: 19px;
+    padding: 22px;
     border-radius: 70px;
 }
 .item{
