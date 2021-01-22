@@ -217,6 +217,10 @@ p{
     border-radius: 10px;
     padding: 75px 80px 75px 50px;
 } 
+.plan-image{
+    margin: 10px;
+    padding-bottom: 10px;
+}
 .plan-box:hover{
     border: 2px solid var(--mainButtons);
 }
@@ -241,10 +245,10 @@ p{
 }
 .connect{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+   flex-direction: column;
+     align-items: center;
     position: relative;
-    bottom: -250px;
+    bottom: -100px;
 }
 .testimonial{
     display: flex;
@@ -264,14 +268,17 @@ p{
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    right: 31px;
     top: 45px;
-
+    right: 57px;
+}
+.flex-star p{
+    margin: 0;
+    padding: 0;
 }
 .person{
     position: relative;
-    top: 36px;
-    left: 100px;
+    top: 20px;
+    left: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -290,6 +297,10 @@ p{
 .row ul li a{
     text-decoration: none;
     color: var(--mainParagraph);
+}
+.paragraph p{
+    max-width: 350px;
+    text-align: center;
 }
 
 .container-form{
