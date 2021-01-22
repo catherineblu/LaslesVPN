@@ -22,6 +22,7 @@ footer {
   background-color: #f8f8f8;
   padding-top: 180px;
   padding-bottom: 100px;
+  display: flex;
 }
 h1 {
   font-size: 3.125rem;
@@ -352,7 +353,6 @@ p {
 }
 .container-footer {
   display: flex;
-
 }
 .text h2 {
   line-height: 45px;
@@ -391,8 +391,7 @@ p {
   padding-bottom: 10px;
 }
 .row-container{
-    margin: 0;
-    padding: 0;
+
     display: flex;
     justify-content: space-between;
 }
@@ -502,11 +501,11 @@ p {
     align-items: center;
  } 
  .row-container{
-     
      padding-bottom: 50px;
      display: flex;
      justify-content: space-between;
  }
+
  .row h5{
      font-size: 0.9rem;
  }
@@ -514,5 +513,115 @@ p {
     font-size: 0.9rem;
     margin-right: 35px;
 }
+}
+@media screen and (max-width: 1024px){
+    .logo {
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+      .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      .nav-items ul a {
+        float: left;
+      }
+      .nav-items.show {
+        display: flex;
+        border: 2px solid var(--mainButtons);
+        border-radius: 7px;
+      }
+      .hamburger {
+        display: block;
+        padding-right: 25px;
+      }
+      .optional {
+        display: block;
+      }
+      .login-signup {
+        display: none;
+      }
+      .container-primary {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero-section h1 {
+        text-align: center;
+      }
+      .hero-section {
+        text-align: center;
+      }
 
+      .container-primary .illustration-1 {
+        width: 100%;
+      }
+      .icons {
+        max-width: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 23px 15px 0px rgba(0, 0, 0, 0.06);
+      }
+      .vl{
+          padding-right: 25px;
+      }
+      .item {
+        margin-bottom: 10px;
+      }
+      
+      .illustration-2 {
+        max-width: 100%;
+      }
+      
+      .pros {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .plans {
+        display: flex;
+        flex-direction: column;
+      }
+      .map {
+        max-width: 100%;
+      }
+      .testimonials {
+        display: flex;
+        flex-direction: column;
+      }
+      .testimonial {
+        margin-bottom: 50px;
+      }
+      .container-form {
+        display: flex;
+        flex-direction: column;
+      }
+     .text{
+         text-align: center;
+        margin-bottom: 40px;  
+     }
+     .container-footer{
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+     } 
+     .row-container{
+         padding-bottom: 50px;
+         display: flex;
+         justify-content: space-between;
+     }
+    
+     .row h5{
+         font-size: 0.9rem;
+     }
+    .row ul li{
+        font-size: 0.9rem;
+        margin-right: 35px;
+    }
 }
