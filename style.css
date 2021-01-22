@@ -352,7 +352,7 @@ p {
 }
 .container-footer {
   display: flex;
-  justify-content: space-between;
+
 }
 .text h2 {
   line-height: 45px;
@@ -390,9 +390,17 @@ p {
 .footer-header {
   padding-bottom: 10px;
 }
+.row-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*Media queries*/
 @media screen and (max-width: 767px) {
+    
   .logo {
     padding-right: 50px;
     padding-left: 50px;
@@ -482,7 +490,29 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .container-form.btn-secondary {
-    padding-top: 50px;
-  }
+ .text{
+     text-align: center;
+    margin-bottom: 40px;  
+ }
+ .container-footer{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+ } 
+ .row-container{
+     
+     padding-bottom: 50px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .row h5{
+     font-size: 0.9rem;
+ }
+.row ul li{
+    font-size: 0.9rem;
+    margin-right: 35px;
+}
+
 }
