@@ -170,6 +170,19 @@ p{
     align-items: center;
     display: flex;
 }
+.flex-item p{
+    line-height: 30px;
+}
+.flex-item{
+    display: flex;
+    margin-bottom: 10px;
+}
+.flex-item img{
+    padding-right: 25px;
+}
+.flex img{
+    padding-right: 12px;
+}
 .pros{
     margin-top: 95px;
     padding-left: 170px;
@@ -194,6 +207,9 @@ p{
     padding-bottom: 20px;
 }
 .plan-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: 760px;
     margin-top: 60px;
     background-color: var(--mainWhite);
