@@ -48,20 +48,19 @@ p{
     color: var(--mainParagraph);
     margin: 0;
     padding: 0;
-    /*line-height: 30px;*/
 }
 
 .container{
     max-width: 1140px;
     display: flex;
     justify-content: space-between;
-    margin-left: 150px;
+    margin: 0 auto;
     
 }
 .container-primary{
     max-width: 1207px;
     display: flex;
-    margin-left: 150px;
+    margin: 0 auto;
     margin-bottom: 150px;
     
 }
@@ -164,10 +163,18 @@ p{
 }
 .text-box{
     text-align: center;
+    line-height: 30px;
 }
 
+.text-box h2 {
+    font-weight: 500;
+    line-height: 50px;
+}
+.container-text-box img {
+    margin-top: 150px;
+}
 .flex{
-    align-items: center;
+        align-items: center;
     display: flex;
 }
 .flex-item p{
@@ -181,6 +188,7 @@ p{
     padding-right: 25px;
 }
 .flex img{
+    margin-top: -15px;
     padding-right: 12px;
 }
 .pros{
@@ -208,9 +216,11 @@ p{
 }
 .plan-box{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    height: 760px;
+    min-height: 760px;
+    min-width: 330px;
     margin-top: 60px;
     background-color: var(--mainWhite);
     border: 2px solid var(--secondaryBorders);
@@ -225,14 +235,18 @@ p{
     border: 2px solid var(--mainButtons);
 }
 
-.plan-box h2{
+.plan-box h4{
     font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
 }
 .plan-box p{
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
 }
+
+
 .container-text-box{
     display: flex;
     flex-direction: column;
@@ -242,13 +256,21 @@ p{
 .testimonials{
     display: flex;
     justify-content: space-between;
+    margin-top: -100px;
 }
 .connect{
     display: flex;
-   flex-direction: column;
-     align-items: center;
-    position: relative;
-    bottom: -100px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+    /* bottom: -100px; */
+    /* margin-bottom: 250px; */
+}
+.connect p {
+    font-size: 25px;
+    margin-bottom: 20px;;
 }
 .testimonial{
     display: flex;
@@ -257,6 +279,7 @@ p{
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid var(--secondaryBorders);
+    margin-top: 0px;
     padding: 30px auto ;
 }
 .testimonial p{
@@ -357,4 +380,5 @@ p{
 .footer-header{
     padding-bottom: 10px;
 }
+
 
