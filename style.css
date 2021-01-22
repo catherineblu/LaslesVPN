@@ -87,6 +87,7 @@ p{
     background-color: transparent;
     border: none;
     outline: none;
+    display: none;
     color:var(--mainButtons);
     cursor: pointer;
     font-size: 20px;
@@ -389,4 +390,12 @@ p{
     padding-bottom: 10px;
 }
 
-
+/*Media queries*/
+@media screen and (max-width: 767px){
+    .nav-items{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
