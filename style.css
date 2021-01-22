@@ -67,6 +67,7 @@ p{
 .navbar{
     margin-top: 45px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 101px;
@@ -394,6 +395,11 @@ p{
 @media screen and (max-width: 767px){
     .nav-items{
         display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-items.show{
+        display: flex;
     }
     .hamburger{
         display: block;
