@@ -93,6 +93,9 @@ p{
     cursor: pointer;
     font-size: 20px;
 }
+.optional{
+    display: none;
+}
 .btn-primary{
     color: var(--mainButtons);
     background-color: var(--mainWhite);
@@ -393,15 +396,28 @@ p{
 
 /*Media queries*/
 @media screen and (max-width: 767px){
+    .logo{
+        padding-right: 50px;
+    }
     .nav-items{
         display: none;
         flex-direction: column;
         width: 100%;
+    }
+    .nav-items ul a{
+        float: left;
     }
     .nav-items.show{
         display: flex;
     }
     .hamburger{
         display: block;
+        padding-right: 50px;
+    }
+    .optional{
+        display: block;
+    }
+    .login-signup{
+        display: none;
     }
 }
