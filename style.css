@@ -404,14 +404,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    right: -300px;
   }
-  /* .navbar{
-        width: 300px;
-        height: 100%;
-        background-color: violet;
-        position: fixed;
-        top: 0;
-    }*/
+  .change {
+    right: 0;
+}
   .nav-items {
     flex-direction: column;
     text-align: right;
@@ -607,7 +604,7 @@ p {
     /*display: block;
         padding-right: 25px;
   }*/
-  
+ 
   .optional-nav {
     display: none;
   }
