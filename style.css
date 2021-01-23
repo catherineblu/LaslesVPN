@@ -404,9 +404,11 @@ p {
     padding-right: 50px;
     padding-left: 50px;
   }
+  
   .nav-items {
     display: none;
     flex-direction: column;
+    align-content: center;
     width: 100%;
   }
   .nav-items ul a {
@@ -590,8 +592,10 @@ p {
         max-width: 100%;
       }
       .testimonials {
+        padding-left: 50px;
+        padding-right: 50px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
       }
       .testimonial {
         margin-bottom: 50px;
