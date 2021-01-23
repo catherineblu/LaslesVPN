@@ -388,11 +388,11 @@ p {
 
 @media screen and (max-width: 767px) {
   .logo {
-      display: none;
+    display: none;
     padding-right: 50px;
     padding-left: 50px;
   }
-.nav-responsive{
+  .nav-responsive {
     width: 300px;
     height: 100%;
     position: fixed;
@@ -404,8 +404,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
+  }
   /* .navbar{
         width: 300px;
         height: 100%;
@@ -420,42 +419,65 @@ p {
     margin-left: auto;
     margin: 25px;
     text-transform: uppercase;
+    position: relative;
   }
   .nav-item::before,
-  .nav-item::after{
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: var(--mainButtons);
-      position: absolute;
-      left: 0;
+  .nav-item::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--mainButtons);
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
   }
-  .nav-item::after{
-      bottom: 0;
+  .nav-item::after {
+    bottom: 0;
+    transform-origin: right;
+  }
+  .nav-item::before {
+    top: 0;
+    transform-origin: left;
   }
   .nav-items ul a {
     float: left;
   }
-  .nav-item{
-      margin: 25px;
-      position: relative;
+  .nav-item {
+    margin: 25px;
+    position: relative;
+    padding: 3px 0;
   }
-   .hamburger {
-        width: 35px;
-        height: 30px;
-        position: fixed;
-        top: 50px;
-        right: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-   .optional-nav{
-       display: block;
-   }
-   .login-signup{
-       display: none;
-   }
+  .nav-item:hover::before,
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }
+  .hamburger {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .optional-nav {
+    display: block;
+  }
+  .login-signup {
+    display: none;
+  }
+  .change .line-1{
+      transform: rotateZ(-45deg) translate(-8px, 6px);
+  }
+  .change .line-2{
+      opacity: 0;
+  }
+  .change .line-3{
+    transform: rotateZ(45deg) translate(-8px, -6px);
+}
 
   .container-primary {
     padding-left: 50px;
@@ -551,8 +573,8 @@ p {
     padding-right: 25px;
     padding-left: 25px;
   }
-  .login-signup{
-      margin: 15px;
+  .login-signup {
+    margin: 15px;
   }
   /*.nav-items {
     display: none;
@@ -584,9 +606,9 @@ p {
     height: 3px;
     background-color: var(--mainButtons);
   }
-.optional-nav{
-    display: block;
-}
+  .optional-nav {
+    display: none;
+  }
   .container-primary {
     padding-left: 50px;
     padding-right: 50px;
