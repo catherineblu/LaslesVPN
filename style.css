@@ -510,9 +510,7 @@ p {
  .row h5{
      font-size: 0.5rem;
  }
- .row ul{
-     
- }
+ 
 .row ul li{
     width: 105px;
     font-size: 0.7rem;
@@ -626,16 +624,17 @@ p {
          text-align: center;
         margin-bottom: 40px;  
      }
-     
+     footer{
+         padding-top: 90px;
+     }
      .container-footer{
-        padding-left: 50px;
-        padding-right: 50px;
+        
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
      } 
      .row-container{
-         padding-bottom: 50px;
+         padding-left: 0;
          display: flex;
          justify-content: space-between;
      }
@@ -643,8 +642,10 @@ p {
      .row h5{
          font-size: 0.9rem;
      }
-    .row ul li{
-        font-size: 0.9rem;
+     .row ul li{
+        
+        font-size: 0.8rem;
         margin-right: 35px;
+        line-height: 10px;
     }
 }
