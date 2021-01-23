@@ -22,7 +22,6 @@ footer {
   background-color: #f8f8f8;
   padding-top: 180px;
   padding-bottom: 100px;
-  display: flex;
 }
 h1 {
   font-size: 3.125rem;
@@ -66,7 +65,6 @@ p {
 .navbar {
   margin-top: 45px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 101px;
@@ -82,19 +80,6 @@ p {
 .navbar ul li a {
   color: var(--mainParagraph);
   text-decoration: none;
-}
-/*
-.hamburger {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  display: none;
-  color: var(--mainButtons);
-  cursor: pointer;
-  font-size: 20px;
-}*/
-.optional-nav {
-  display: none;
 }
 .btn-primary {
   color: var(--mainButtons);
@@ -239,9 +224,6 @@ p {
   padding: 75px 80px 75px 50px;
 }
 .plan-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 10px;
   padding-bottom: 10px;
 }
@@ -354,6 +336,7 @@ p {
 }
 .container-footer {
   display: flex;
+  justify-content: space-between;
 }
 .text h2 {
   line-height: 45px;
@@ -378,9 +361,9 @@ p {
 }
 
 .row {
-    margin: 30px;
   display: flex;
   flex-direction: column;
+  padding-left: 60px;
 }
 .footer-head {
   margin-bottom: 20px;
@@ -392,11 +375,302 @@ p {
 .footer-header {
   padding-bottom: 10px;
 }
-.row-container{
-    padding-left: 200px;
-    display: flex;
-    justify-content: space-between;
+.row-container {
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 /*Media queries*/
+
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  /* .navbar{
+        width: 300px;
+        height: 100%;
+        background-color: violet;
+        position: fixed;
+        top: 0;
+    }*/
+  .nav-items {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  .nav-items ul a {
+    float: left;
+  }
+  /* .hamburger {
+        width: 35px;
+        height: 30px;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }*/
+  .optional {
+    display: block;
+  }
+  .login-signup {
+    display: none;
+  }
+  .container-primary {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section h1 {
+    text-align: center;
+  }
+  .hero-section {
+    text-align: center;
+  }
+  .container-primary .illustration-1 {
+    width: 100%;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 23px 15px 0px rgba(0, 0, 0, 0.06);
+  }
+  .item {
+    margin-bottom: 10px;
+  }
+  .vl {
+    transform: rotate(90deg);
+  }
+  .illustration-2 {
+    max-width: 100%;
+  }
+  .pros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .plans {
+    display: flex;
+    flex-direction: column;
+  }
+  .map {
+    max-width: 100%;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial {
+    margin-bottom: 50px;
+  }
+  .container-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .container-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .row-container {
+    padding-left: 0;
+  }
+
+  .row h5 {
+    font-size: 0.5rem;
+  }
+
+  .row ul li {
+    width: 105px;
+    font-size: 0.7rem;
+    margin-right: 35px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .nav-items {
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .nav-items ul a {
+    float: left;
+  }
+  .nav-items.show {
+    display: flex;
+    border: 2px solid var(--mainButtons);
+    border-radius: 7px;
+  }
+  
+  .hamburger {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*display: block;
+        padding-right: 25px;*/
+  }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--mainButtons);
+  }
+
+  .optional-nav {
+    display: block;
+  }
+  .login-signup {
+    display: none;
+  }
+  .container-primary {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section h1 {
+    text-align: center;
+  }
+  .hero-section {
+    text-align: center;
+  }
+
+  .container-primary .illustration-1 {
+    width: 100%;
+  }
+  .icons {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 23px 15px 0px rgba(0, 0, 0, 0.06);
+  }
+  .vl {
+    padding-right: 25px;
+  }
+  .item {
+    margin-bottom: 10px;
+  }
+
+  .illustration-2 {
+    max-width: 100%;
+  }
+
+  .pros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .plans {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .plan-image {
+    display: none;
+  }
+  .plan-box {
+    min-height: 560px;
+    min-width: 300px;
+  }
+  .optional {
+    position: relative;
+    left: 30%;
+    bottom: 30px;
+    display: block;
+  }
+
+  .map {
+    max-width: 100%;
+  }
+  .testimonials {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .testimonial {
+    margin-bottom: 50px;
+    display: flex;
+  }
+
+  .flex-star {
+    position: relative;
+    top: 35px;
+    right: 10px;
+  }
+  .person {
+    position: relative;
+    left: 30px;
+  }
+
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--secondaryBorders);
+    max-width: 80%;
+    margin-left: 10%;
+  }
+
+  .text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  footer {
+    padding-top: 130px;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .row-container {
+    padding-bottom: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row h5 {
+    font-size: 0.9rem;
+  }
+  .row ul li {
+    font-size: 0.8rem;
+    margin-right: 35px;
+    line-height: 10px;
+  }
+}
