@@ -83,6 +83,7 @@ p {
   color: var(--mainParagraph);
   text-decoration: none;
 }
+/*
 .hamburger {
   background-color: transparent;
   border: none;
@@ -91,8 +92,8 @@ p {
   color: var(--mainButtons);
   cursor: pointer;
   font-size: 20px;
-}
-.optional {
+}*/
+.optional-nav {
   display: none;
 }
 .btn-primary {
