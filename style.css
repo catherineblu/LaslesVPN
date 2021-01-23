@@ -504,17 +504,20 @@ p {
     align-items: center;
  } 
  .row-container{
-     padding-bottom: 50px;
-     display: flex;
-     justify-content: space-between;
+     padding-left: 0;
  }
 
  .row h5{
-     font-size: 0.9rem;
+     font-size: 0.5rem;
+ }
+ .row ul{
+     
  }
 .row ul li{
-    font-size: 0.9rem;
+    width: 105px;
+    font-size: 0.7rem;
     margin-right: 35px;
+    line-height: 15px;
 }
 }
 @media screen and (max-width: 1024px){
