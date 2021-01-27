@@ -68,6 +68,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 101px;
+  /*display: block !important;*/
 }
 .nav-items {
   display: flex;
@@ -81,9 +82,7 @@ p {
   color: var(--mainParagraph);
   text-decoration: none;
 }
-/*.optional-nav{
-    display: none;
-}*/
+
 .btn-primary {
   color: var(--mainButtons);
   background-color: var(--mainWhite);
@@ -579,32 +578,9 @@ p {
   .login-signup {
     margin: 15px;
   }
-  /*.nav-items {
+  .navbar{
     display: none;
-    flex-direction: column;
-    width: 100%;
   }
-  .nav-items ul a {
-    float: left;
-  }
-  .nav-items.show {
-    display: flex;
-    border: 2px solid var(--mainButtons);
-    border-radius: 7px;
-  }
-  
-  .hamburger {
-    width: 35px;
-    height: 30px;
-    top: 50px;
-    right: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /*display: block;
-        padding-right: 25px;
-  }*/
- 
   .optional-nav {
     display: none;
   }
