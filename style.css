@@ -70,6 +70,9 @@ p {
   padding-bottom: 101px;
   /*display: block !important;*/
 }
+.optional-nav {
+  display: none;
+}
 .nav-items {
   display: flex;
 }
