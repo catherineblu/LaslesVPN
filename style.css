@@ -451,13 +451,14 @@ p {
   .hamburger {
     width: 35px;
     height: 30px;
-    position: absolute;
+    position: relative;
     top: 20px;
-    right: 25px;
+    left: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   .optional-nav {
     display: block;
